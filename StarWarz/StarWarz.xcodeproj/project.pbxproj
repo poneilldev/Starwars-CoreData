@@ -17,6 +17,10 @@
 		ACF7EFD223DCAE0A00D0AABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF7EFD123DCAE0A00D0AABD /* Assets.xcassets */; };
 		ACF7EFD523DCAE0A00D0AABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF7EFD323DCAE0A00D0AABD /* LaunchScreen.storyboard */; };
 		ACF7EFE023DCAE0A00D0AABD /* StarWarzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFDF23DCAE0A00D0AABD /* StarWarzUITests.swift */; };
+		ACF7EFEC23DCFA9300D0AABD /* CharacterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFEB23DCFA9300D0AABD /* CharacterListTableViewCell.swift */; };
+		ACF7EFEF23DD010F00D0AABD /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFEE23DD010F00D0AABD /* CharacterDetailViewController.swift */; };
+		ACF7EFF223DD03D700D0AABD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFF123DD03D700D0AABD /* NetworkService.swift */; };
+		ACF7EFF423DD07AA00D0AABD /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFF323DD07AA00D0AABD /* NetworkServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		ACF7EFDB23DCAE0A00D0AABD /* StarWarzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7EFDF23DCAE0A00D0AABD /* StarWarzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarzUITests.swift; sourceTree = "<group>"; };
 		ACF7EFE123DCAE0A00D0AABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF7EFEB23DCFA9300D0AABD /* CharacterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewCell.swift; sourceTree = "<group>"; };
+		ACF7EFEE23DD010F00D0AABD /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		ACF7EFF123DD03D700D0AABD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		ACF7EFF323DD07AA00D0AABD /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
 		ECE26B1E9102E95968EAAAB6 /* Pods_StarWarz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE44E7AB5F3DC8090960FE75 /* Pods-StarWarz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarz.debug.xcconfig"; path = "Target Support Files/Pods-StarWarz/Pods-StarWarz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +103,9 @@
 			children = (
 				ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */,
 				ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */,
+				ACF7EFED23DD00F600D0AABD /* CharacterDetail */,
 				ACF7EFEA23DCF9D700D0AABD /* CharacterList */,
+				ACF7EFF023DD034800D0AABD /* Networking */,
 				ACF7EFD123DCAE0A00D0AABD /* Assets.xcassets */,
 				ACF7EFD323DCAE0A00D0AABD /* LaunchScreen.storyboard */,
 				ACF7EFD623DCAE0A00D0AABD /* Info.plist */,
@@ -118,8 +128,26 @@
 			children = (
 				ACF7EFC923DCAE0900D0AABD /* CharacterListViewController.swift */,
 				ACF7EFCB23DCAE0900D0AABD /* Main.storyboard */,
+				ACF7EFEB23DCFA9300D0AABD /* CharacterListTableViewCell.swift */,
 			);
 			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		ACF7EFED23DD00F600D0AABD /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7EFEE23DD010F00D0AABD /* CharacterDetailViewController.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		ACF7EFF023DD034800D0AABD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7EFF123DD03D700D0AABD /* NetworkService.swift */,
+				ACF7EFF323DD07AA00D0AABD /* NetworkServiceError.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		ED94ED368F2AE6E5025C0424 /* Frameworks */ = {
@@ -293,9 +321,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF7EFCA23DCAE0900D0AABD /* CharacterListViewController.swift in Sources */,
+				ACF7EFF423DD07AA00D0AABD /* NetworkServiceError.swift in Sources */,
+				ACF7EFEF23DD010F00D0AABD /* CharacterDetailViewController.swift in Sources */,
 				ACF7EFC623DCAE0900D0AABD /* AppDelegate.swift in Sources */,
+				ACF7EFEC23DCFA9300D0AABD /* CharacterListTableViewCell.swift in Sources */,
 				ACF7EFC823DCAE0900D0AABD /* SceneDelegate.swift in Sources */,
 				ACF7EFD023DCAE0900D0AABD /* StarWarz.xcdatamodeld in Sources */,
+				ACF7EFF223DD03D700D0AABD /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@ import UIKit
 
 class CharacterListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -18,6 +19,7 @@ class CharacterListViewController: UIViewController {
     private func setupUI() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
     }
 
 }
@@ -38,7 +40,9 @@ extension CharacterListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: CharacterListTableViewCell.identifier, for: indexPath) as! CharacterListTableViewCell
+        cell.configureCell()
+        return cell
     }
 }
 
