@@ -11,7 +11,7 @@
 		8B0B71F731725040E9CE2290 /* Pods_StarWarz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE26B1E9102E95968EAAAB6 /* Pods_StarWarz.framework */; };
 		ACF7EFC623DCAE0900D0AABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */; };
 		ACF7EFC823DCAE0900D0AABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */; };
-		ACF7EFCA23DCAE0900D0AABD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC923DCAE0900D0AABD /* ViewController.swift */; };
+		ACF7EFCA23DCAE0900D0AABD /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC923DCAE0900D0AABD /* CharacterListViewController.swift */; };
 		ACF7EFCD23DCAE0900D0AABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF7EFCB23DCAE0900D0AABD /* Main.storyboard */; };
 		ACF7EFD023DCAE0900D0AABD /* StarWarz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFCE23DCAE0900D0AABD /* StarWarz.xcdatamodeld */; };
 		ACF7EFD223DCAE0A00D0AABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF7EFD123DCAE0A00D0AABD /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 		ACF7EFC223DCAE0900D0AABD /* StarWarz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACF7EFC923DCAE0900D0AABD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACF7EFC923DCAE0900D0AABD /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		ACF7EFCC23DCAE0900D0AABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACF7EFCF23DCAE0900D0AABD /* StarWarz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarWarz.xcdatamodel; sourceTree = "<group>"; };
 		ACF7EFD123DCAE0A00D0AABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,8 +95,7 @@
 			children = (
 				ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */,
 				ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */,
-				ACF7EFC923DCAE0900D0AABD /* ViewController.swift */,
-				ACF7EFCB23DCAE0900D0AABD /* Main.storyboard */,
+				ACF7EFEA23DCF9D700D0AABD /* CharacterList */,
 				ACF7EFD123DCAE0A00D0AABD /* Assets.xcassets */,
 				ACF7EFD323DCAE0A00D0AABD /* LaunchScreen.storyboard */,
 				ACF7EFD623DCAE0A00D0AABD /* Info.plist */,
@@ -112,6 +111,15 @@
 				ACF7EFE123DCAE0A00D0AABD /* Info.plist */,
 			);
 			path = StarWarzUITests;
+			sourceTree = "<group>";
+		};
+		ACF7EFEA23DCF9D700D0AABD /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7EFC923DCAE0900D0AABD /* CharacterListViewController.swift */,
+				ACF7EFCB23DCAE0900D0AABD /* Main.storyboard */,
+			);
+			path = CharacterList;
 			sourceTree = "<group>";
 		};
 		ED94ED368F2AE6E5025C0424 /* Frameworks */ = {
@@ -131,7 +139,6 @@
 				358EE866C00FB2B525A4CEC2 /* Pods-StarWarz-StarWarzUITests.debug.xcconfig */,
 				823D2073F11C164D4FAD7C6C /* Pods-StarWarz-StarWarzUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -285,7 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF7EFCA23DCAE0900D0AABD /* ViewController.swift in Sources */,
+				ACF7EFCA23DCAE0900D0AABD /* CharacterListViewController.swift in Sources */,
 				ACF7EFC623DCAE0900D0AABD /* AppDelegate.swift in Sources */,
 				ACF7EFC823DCAE0900D0AABD /* SceneDelegate.swift in Sources */,
 				ACF7EFD023DCAE0900D0AABD /* StarWarz.xcdatamodeld in Sources */,
