@@ -15,6 +15,7 @@
 		AC6D1F1A23DE7933002AC169 /* SWCharacter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F1923DE7933002AC169 /* SWCharacter+CoreDataClass.swift */; };
 		AC6D1F1B23DE7933002AC169 /* SWCharacter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F1823DE7933002AC169 /* SWCharacter+CoreDataProperties.swift */; };
 		AC6D1F1D23DE7C71002AC169 /* CharacterListSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F1C23DE7C71002AC169 /* CharacterListSplitViewController.swift */; };
+		ACD5946823DEBC9100296E59 /* AffiliationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5946723DEBC9100296E59 /* AffiliationType.swift */; };
 		ACF7EFC623DCAE0900D0AABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */; };
 		ACF7EFC823DCAE0900D0AABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */; };
 		ACF7EFCA23DCAE0900D0AABD /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC923DCAE0900D0AABD /* CharacterListViewController.swift */; };
@@ -50,6 +51,7 @@
 		AC6D1F1823DE7933002AC169 /* SWCharacter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SWCharacter+CoreDataProperties.swift"; path = "/Users/poneill/development/fun/StarWarz/StarWarz/Models/SWCharacter+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		AC6D1F1923DE7933002AC169 /* SWCharacter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SWCharacter+CoreDataClass.swift"; path = "/Users/poneill/development/fun/StarWarz/StarWarz/Models/SWCharacter+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		AC6D1F1C23DE7C71002AC169 /* CharacterListSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListSplitViewController.swift; sourceTree = "<group>"; };
+		ACD5946723DEBC9100296E59 /* AffiliationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffiliationType.swift; sourceTree = "<group>"; };
 		ACF7EFC223DCAE0900D0AABD /* StarWarz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				ACF7EFEE23DD010F00D0AABD /* CharacterDetailViewController.swift */,
+				ACD5946723DEBC9100296E59 /* AffiliationType.swift */,
 			);
 			path = CharacterDetail;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				AC6D1F1023DD2DFB002AC169 /* CoreDataManager.swift in Sources */,
 				ACF7EFF223DD03D700D0AABD /* NetworkService.swift in Sources */,
 				AC6D1F1323DD36C8002AC169 /* StarWarzCharacters.swift in Sources */,
+				ACD5946823DEBC9100296E59 /* AffiliationType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
