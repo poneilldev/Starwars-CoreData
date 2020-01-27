@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CharacterListTableViewCell: UITableViewCell {
     static let identifier = "CharacterListTableViewCell"
-    static let cellHeight: CGFloat = 115
+    static let cellHeight: CGFloat = 80
     @IBOutlet weak var pictureImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 
@@ -19,8 +20,21 @@ class CharacterListTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func configureCell() {
-        
+    func configureCell(character: SWCharacter) {
+        stylize()
+        let url = URL(string: character.profilePicture)
+        pictureImageView.kf.setImage(with: url, placeholder: UIImage(systemName: "person.fill"))
+        if character.lastName == "" {
+            nameLabel.text = character.firstName
+        } else {
+            nameLabel.text = character.firstName + " " + character.lastName
+        }
+
+    }
+
+    private func stylize() {
+        pictureImageView.layer.cornerRadius = pictureImageView.frame.width/2
+        pictureImageView.clipsToBounds = true
     }
 
 }

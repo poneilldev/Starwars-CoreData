@@ -6,6 +6,7 @@ target 'StarWarz' do
   use_frameworks!
 
   # Pods for StarWarz
+  pod 'Kingfisher', '~> 5.0'
 
   target 'StarWarzUITests' do
     # Pods for testing

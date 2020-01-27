@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2DD3F8836345E82073B47E6F /* Pods_StarWarz_StarWarzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422F823F505811403D266DBD /* Pods_StarWarz_StarWarzUITests.framework */; };
 		8B0B71F731725040E9CE2290 /* Pods_StarWarz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE26B1E9102E95968EAAAB6 /* Pods_StarWarz.framework */; };
+		AC6D1F0D23DD286B002AC169 /* CharacterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F0C23DD286B002AC169 /* CharacterManager.swift */; };
+		AC6D1F1023DD2DFB002AC169 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F0F23DD2DFB002AC169 /* CoreDataManager.swift */; };
+		AC6D1F1323DD36C8002AC169 /* StarWarzCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F1223DD36C8002AC169 /* StarWarzCharacters.swift */; };
+		AC6D1F1A23DE7933002AC169 /* SWCharacter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F1923DE7933002AC169 /* SWCharacter+CoreDataClass.swift */; };
+		AC6D1F1B23DE7933002AC169 /* SWCharacter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F1823DE7933002AC169 /* SWCharacter+CoreDataProperties.swift */; };
+		AC6D1F1D23DE7C71002AC169 /* CharacterListSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D1F1C23DE7C71002AC169 /* CharacterListSplitViewController.swift */; };
 		ACF7EFC623DCAE0900D0AABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */; };
 		ACF7EFC823DCAE0900D0AABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */; };
 		ACF7EFCA23DCAE0900D0AABD /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7EFC923DCAE0900D0AABD /* CharacterListViewController.swift */; };
@@ -38,6 +44,12 @@
 		422F823F505811403D266DBD /* Pods_StarWarz_StarWarzUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarz_StarWarzUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		823D2073F11C164D4FAD7C6C /* Pods-StarWarz-StarWarzUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarz-StarWarzUITests.release.xcconfig"; path = "Target Support Files/Pods-StarWarz-StarWarzUITests/Pods-StarWarz-StarWarzUITests.release.xcconfig"; sourceTree = "<group>"; };
 		90FD963995E862823CEB1964 /* Pods-StarWarz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarz.release.xcconfig"; path = "Target Support Files/Pods-StarWarz/Pods-StarWarz.release.xcconfig"; sourceTree = "<group>"; };
+		AC6D1F0C23DD286B002AC169 /* CharacterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterManager.swift; sourceTree = "<group>"; };
+		AC6D1F0F23DD2DFB002AC169 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AC6D1F1223DD36C8002AC169 /* StarWarzCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarzCharacters.swift; sourceTree = "<group>"; };
+		AC6D1F1823DE7933002AC169 /* SWCharacter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SWCharacter+CoreDataProperties.swift"; path = "/Users/poneill/development/fun/StarWarz/StarWarz/Models/SWCharacter+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		AC6D1F1923DE7933002AC169 /* SWCharacter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SWCharacter+CoreDataClass.swift"; path = "/Users/poneill/development/fun/StarWarz/StarWarz/Models/SWCharacter+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		AC6D1F1C23DE7C71002AC169 /* CharacterListSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListSplitViewController.swift; sourceTree = "<group>"; };
 		ACF7EFC223DCAE0900D0AABD /* StarWarz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +90,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC6D1F0B23DD282E002AC169 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AC6D1F0C23DD286B002AC169 /* CharacterManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		AC6D1F0E23DD2D33002AC169 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AC6D1F0F23DD2DFB002AC169 /* CoreDataManager.swift */,
+				AC6D1F1C23DE7C71002AC169 /* CharacterListSplitViewController.swift */,
+				ACF7EFCB23DCAE0900D0AABD /* Main.storyboard */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AC6D1F1123DD36B2002AC169 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC6D1F1223DD36C8002AC169 /* StarWarzCharacters.swift */,
+				AC6D1F1923DE7933002AC169 /* SWCharacter+CoreDataClass.swift */,
+				AC6D1F1823DE7933002AC169 /* SWCharacter+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACF7EFB923DCAE0900D0AABD = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +143,11 @@
 			children = (
 				ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */,
 				ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */,
+				AC6D1F0E23DD2D33002AC169 /* CoreData */,
 				ACF7EFED23DD00F600D0AABD /* CharacterDetail */,
 				ACF7EFEA23DCF9D700D0AABD /* CharacterList */,
+				AC6D1F0B23DD282E002AC169 /* Manager */,
+				AC6D1F1123DD36B2002AC169 /* Models */,
 				ACF7EFF023DD034800D0AABD /* Networking */,
 				ACF7EFD123DCAE0A00D0AABD /* Assets.xcassets */,
 				ACF7EFD323DCAE0A00D0AABD /* LaunchScreen.storyboard */,
@@ -127,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				ACF7EFC923DCAE0900D0AABD /* CharacterListViewController.swift */,
-				ACF7EFCB23DCAE0900D0AABD /* Main.storyboard */,
 				ACF7EFEB23DCFA9300D0AABD /* CharacterListTableViewCell.swift */,
 			);
 			path = CharacterList;
@@ -181,6 +223,7 @@
 				ACF7EFBE23DCAE0900D0AABD /* Sources */,
 				ACF7EFBF23DCAE0900D0AABD /* Frameworks */,
 				ACF7EFC023DCAE0900D0AABD /* Resources */,
+				A875921D17241EBB17637BFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +242,7 @@
 				ACF7EFD723DCAE0A00D0AABD /* Sources */,
 				ACF7EFD823DCAE0A00D0AABD /* Frameworks */,
 				ACF7EFD923DCAE0A00D0AABD /* Resources */,
+				715DDC7F1DB6D8B6263ADE5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +335,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		715DDC7F1DB6D8B6263ADE5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarz-StarWarzUITests/Pods-StarWarz-StarWarzUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarz-StarWarzUITests/Pods-StarWarz-StarWarzUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarz-StarWarzUITests/Pods-StarWarz-StarWarzUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7B14F81FE8A8DE03C30B4816 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +374,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A875921D17241EBB17637BFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarz/Pods-StarWarz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarz/Pods-StarWarz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarz/Pods-StarWarz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,10 +402,16 @@
 				ACF7EFF423DD07AA00D0AABD /* NetworkServiceError.swift in Sources */,
 				ACF7EFEF23DD010F00D0AABD /* CharacterDetailViewController.swift in Sources */,
 				ACF7EFC623DCAE0900D0AABD /* AppDelegate.swift in Sources */,
+				AC6D1F1B23DE7933002AC169 /* SWCharacter+CoreDataProperties.swift in Sources */,
 				ACF7EFEC23DCFA9300D0AABD /* CharacterListTableViewCell.swift in Sources */,
+				AC6D1F1A23DE7933002AC169 /* SWCharacter+CoreDataClass.swift in Sources */,
 				ACF7EFC823DCAE0900D0AABD /* SceneDelegate.swift in Sources */,
+				AC6D1F0D23DD286B002AC169 /* CharacterManager.swift in Sources */,
+				AC6D1F1D23DE7C71002AC169 /* CharacterListSplitViewController.swift in Sources */,
 				ACF7EFD023DCAE0900D0AABD /* StarWarz.xcdatamodeld in Sources */,
+				AC6D1F1023DD2DFB002AC169 /* CoreDataManager.swift in Sources */,
 				ACF7EFF223DD03D700D0AABD /* NetworkService.swift in Sources */,
+				AC6D1F1323DD36C8002AC169 /* StarWarzCharacters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
