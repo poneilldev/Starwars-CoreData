@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6L-ch-IYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-655.20000000000005" y="346.77661169415296"/>
+            <point key="canvasLocation" x="-655" y="453"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v9Y-bf-xUv">
@@ -183,6 +183,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="ZNz-CF-xl5" id="ejF-eq-Dp1"/>
                                             <outlet property="pictureImageView" destination="xxF-yy-r1R" id="XCQ-hQ-QNB"/>
+                                            <segue destination="yqJ-qe-SDi" kind="showDetail" identifier="CharacterListDetailSegue" trigger="accessoryAction" id="df0-N0-e2G"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -226,4 +227,7 @@
             <point key="canvasLocation" x="-1745" y="-48"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="df0-N0-e2G"/>
+    </inferredMetricsTieBreakers>
 </document>

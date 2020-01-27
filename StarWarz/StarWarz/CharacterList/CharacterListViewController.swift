@@ -58,11 +58,21 @@ class CharacterListViewController: UIViewController {
         present(activityController, animated: true, completion: nil)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CharacterListDetailSegue" {
+            if let destinationVC = segue.destination as? CharacterDetailViewController {
+                if let indexPath = self.tableView.indexPathForSelectedRow {
+                    destinationVC.character = characters[indexPath.row]
+                }
+            }
+        }
+    }
+
 }
 
 extension CharacterListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("CHARACTER SELECTED: \(characters[indexPath.row].firstName)")
+        performSegue(withIdentifier: "CharacterListDetailSegue", sender: self)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
