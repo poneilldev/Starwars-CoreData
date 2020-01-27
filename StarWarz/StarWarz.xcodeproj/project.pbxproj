@@ -102,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				AC6D1F0F23DD2DFB002AC169 /* CoreDataManager.swift */,
-				AC6D1F1C23DE7C71002AC169 /* CharacterListSplitViewController.swift */,
 				ACF7EFCB23DCAE0900D0AABD /* Main.storyboard */,
 			);
 			path = CoreData;
@@ -143,6 +142,7 @@
 			children = (
 				ACF7EFC523DCAE0900D0AABD /* AppDelegate.swift */,
 				ACF7EFC723DCAE0900D0AABD /* SceneDelegate.swift */,
+				AC6D1F1C23DE7C71002AC169 /* CharacterListSplitViewController.swift */,
 				AC6D1F0E23DD2D33002AC169 /* CoreData */,
 				ACF7EFED23DD00F600D0AABD /* CharacterDetail */,
 				ACF7EFEA23DCF9D700D0AABD /* CharacterList */,
