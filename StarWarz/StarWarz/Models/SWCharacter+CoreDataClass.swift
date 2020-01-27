@@ -33,11 +33,11 @@ public class SWCharacter: NSManagedObject, Codable {
         // Create NSEntityDescription with NSManagedObjectContext
         guard let codingUserInfoKeyManagedObjectContext = CodingUserInfoKey.managedObjectContext,
         let managedObjectContext = decoder.userInfo[codingUserInfoKeyManagedObjectContext] as? NSManagedObjectContext else {
-            throw NetworkServiceError.badURL("dude")
+            throw CoreDataError.noContextFound
         }
 
         guard let entity = NSEntityDescription.entity(forEntityName: "SWCharacter", in: managedObjectContext) else {
-            throw NetworkServiceError.dataNotFound
+            throw CoreDataError.entityNotFound
         }
 
         self.init(entity: entity, insertInto: nil)
